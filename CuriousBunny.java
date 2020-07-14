@@ -6,7 +6,6 @@ public class CuriousBunny extends Animal
   public CuriousBunny(String color, String name)
   { 
     super(color, name); 
-    count++; 
   } 
   
   public String getName()
