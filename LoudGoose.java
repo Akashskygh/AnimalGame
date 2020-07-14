@@ -6,7 +6,6 @@ public class LoudGoose extends WaterFowl
   public LoudGoose(String color, String name)
   { 
     super(color, name); 
-    count++; 
   } 
   
   public void setName(String name1)
