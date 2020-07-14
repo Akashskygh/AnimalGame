@@ -6,7 +6,6 @@ public class AngryDuck extends WaterFowl
   public AngryDuck(String color, String name)
   { 
     super(color, name);
-    count++; 
   } 
   
   public String getName()
