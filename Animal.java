@@ -7,6 +7,7 @@ public abstract class Animal
   protected String color = "";
   protected int health = 3; 
   protected String name = ""; 
+  private final String dead_mess= "No such action is possible, your animal is dead. You shouldn't have abused it."
   
   public Animal(String color, String name)
   { 
@@ -59,7 +60,7 @@ public abstract class Animal
         else 
         { 
           count--; 
-          return "No such action is possible, your animal is dead. You shouldn't have abused it.";
+          return dead_mess;
         }
     }
     
