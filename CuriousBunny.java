@@ -47,7 +47,7 @@ public class CuriousBunny extends Animal
    
     else 
     { 
-       return "No such action is possible, your animal is dead. You shouldn't have abused it."; 
+       return dead_mess; 
     }
   }
   
