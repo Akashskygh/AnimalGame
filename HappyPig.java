@@ -6,7 +6,6 @@ public class HappyPig extends Animal
   public HappyPig(String color, String name)
   { 
     super(color, name);
-    count++;
   }
   
   public String getColor()
