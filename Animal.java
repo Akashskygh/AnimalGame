@@ -12,6 +12,7 @@ public abstract class Animal
   { 
     this.color = color;  
     this.name = name; 
+    count++; 
   } 
   
   public String getColor()
