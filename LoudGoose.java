@@ -1,4 +1,3 @@
-//Zein Elrez, ID#T00658875
 import java.util.*; 
 
 public class LoudGoose extends WaterFowl
@@ -56,7 +55,18 @@ public class LoudGoose extends WaterFowl
   public boolean fly_state()
   { 
     return super.fly_state();
+  }
+  
+   public void attack(Animal name1) 
+  {
+    super.attack(name1); 
   } 
+  
+  public int getKillCount()
+  {
+    return super.getKillCount();
+  }
+    
      
   public String toString() 
   { 
@@ -64,9 +74,3 @@ public class LoudGoose extends WaterFowl
   }
  
 }
-  
-  
-  
-
-  
-  
