@@ -1,9 +1,9 @@
-//Zein Elrez, ID#T00658875
 import java.util.*; 
 
-public class WaterFowl extends Animal 
+public class WaterFowl extends Animal implements Attackers
 { 
   protected boolean fly_state = false; 
+  protected int kills = 0; 
   
   public WaterFowl(String color, String name) 
   { 
@@ -27,7 +27,7 @@ public class WaterFowl extends Animal
 
      else  
      {  
-       return dead_mess; 
+       return "No such action is possible, your animal is dead. You shouldn't have abused it."; 
      }
   }
   
@@ -49,7 +49,7 @@ public class WaterFowl extends Animal
    
      else 
      { 
-       return dead_mess ; 
+       return "No such action is possible, your animal is dead. You shouldn't have abused it." ; 
      }
   }
   
@@ -62,7 +62,7 @@ public class WaterFowl extends Animal
    
      else 
      { 
-       return dead_mess; 
+       return "No such action is possible, your animal is dead. You shouldn't have abused it."; 
      }
     
   }
@@ -71,6 +71,45 @@ public class WaterFowl extends Animal
   { 
      return fly_state;
   }
+  
+  public void attack(Animal name1) 
+  { 
+    
+    if ( health == 0)
+    { 
+      System.out.println("Your animal cannot attack because it's dead"); 
+    } 
+  
+    else if ( name1.getClass().getSimpleName().compareTo(this.getClass().getSimpleName()) == 0) 
+    { 
+      System.out.println("Your animal cannot attack from its own type");
+    }  
+    
+    else if (name1.health == 0 ) 
+    { 
+      System.out.println("You cannot hit a dead animal"); 
+    } 
+    
+    else if (name1.health == 1) 
+    { 
+      kills++; 
+      name1.hit(1); 
+      System.out.println("Succesful strike, the animal is now Dead"); 
+    } 
+    
+    else
+    { 
+      System.out.println("Succesful strike, the animal is now Hit"); 
+      name1.hit(1); 
+    } 
+   
+  }
+  
+  public int getKillCount()
+  {
+    return kills;
+  }
+       
     
   public String toString() 
   {  
