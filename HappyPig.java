@@ -1,4 +1,3 @@
-//Zein Elrez, ID#T00658875
 import java.util.*; 
 
 public class HappyPig extends Animal 
