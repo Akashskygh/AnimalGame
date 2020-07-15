@@ -1,4 +1,3 @@
-//Zein Elrez, ID#T00658875
 import java.util.*; 
 
 public abstract class Animal 
@@ -6,13 +5,14 @@ public abstract class Animal
   protected static int count = 0;
   protected String color = "";
   protected int health = 3; 
-  protected String name = ""; 
-  protected final String dead_mess= "No such action is possible, your animal is dead. You shouldn't have abused it."
-  
+  protected String name = "";
+  protected static String[] my_farm = new String[100];
+
   public Animal(String color, String name)
   { 
     this.color = color;  
     this.name = name; 
+    my_farm[count] = name;
     count++; 
   } 
   
@@ -60,7 +60,7 @@ public abstract class Animal
         else 
         { 
           count--; 
-          return dead_mess;
+          return "No such action is possible, the animal is dead. You shouldn't have abused it.";
         }
     }
     
@@ -68,6 +68,7 @@ public abstract class Animal
   }
   
   } 
+ 
   
   public String toString() 
   { 
