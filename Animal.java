@@ -6,13 +6,11 @@ public abstract class Animal
   protected String color = "";
   protected int health = 3; 
   protected String name = "";
-  protected static String[] my_farm = new String[100];
 
   public Animal(String color, String name)
   { 
     this.color = color;  
     this.name = name; 
-    my_farm[count] = name;
     count++; 
   } 
   
