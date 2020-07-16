@@ -1,9 +1,9 @@
-//----------------------------------------------------------------
+//***************************************************
 // Teleport.java - INTERFACE
-// Auhthors: James Nguyen & Kelsee Carmichael. 
-// Last updated by: null. 
-//----------------------------------------------------------------
-import java.awt.Point; 
+// Contributors: James Nguyen & Kelsee Carmichael. 
+// Last updated by: James 3:37AM 16/07/20. 
+//***************************************************
+import java.awt.Point;  //import Point 2D
 public interface Teleport
 {    
      //-------------------------------------------------------------------------
@@ -18,6 +18,10 @@ public interface Teleport
      //method getY() - get Y coordinate of character
      //-----------------------------------------------
      public double getY();
+     //----------------------------------------------
+     //checkCoord() - check validity of coordinate
+     //----------------------------------------------
+     public void checkCoord();
      //------------------------------------------------------------------------------------
      //method teleport() - get position from user and teleport character to given position
      //------------------------------------------------------------------------------------
