@@ -8,8 +8,7 @@ public class AngryDuck extends WaterFowl implements Teleport
      public AngryDuck(String color, String name)
      { 
           super(color, name);
-          String teleporter = "Duck";        //this is Duck. 
-          Point location = new Point (0,0); //default is (0,0) when created.
+          location = new Point (0,0); //default is (0,0) when created.
           
      }//end of constructor.
      
