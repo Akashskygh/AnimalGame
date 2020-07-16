@@ -4,9 +4,13 @@ public class TestDriver
 {
      public static void main (String[] args)
      {
-          CuriousBunny bunny1 = new CuriousBunny(" black ", "MrBunnyOne" );
-          bunny1.hop();
-          System.out.print("\n"+bunny1.getPosition());
+          CuriousBunny bunny = new CuriousBunny ("White", "Bugs");
+          HappyPig pig = new HappyPig ("Pink", "Peppa");
+          AngryDuck duck = new AngryDuck ("Black", "Donald");
+          LoudGoose goose = new LoudGoose ("Yellow", "Daisy");
+          
+          bunny.hop();
+          System.out.print("\n"+bunny.getPosition());
      
      }// end of main()
      
