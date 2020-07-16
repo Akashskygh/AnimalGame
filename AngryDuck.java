@@ -1,5 +1,4 @@
-import java.awt.Point; 
-
+import java.awt.Point; //import Point 2D
 public class AngryDuck extends WaterFowl implements Teleport
 { 
      //Declare varibles.
