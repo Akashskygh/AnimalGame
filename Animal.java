@@ -9,7 +9,6 @@ public abstract class Animal
      protected String color = "";               //color of character. 
      protected int health = 3;                  //health of character. (deafault is 3/3 when created)  
      protected String name = "";                //name of character.
-
      //------------------------------------------------------------
      // Animal's constructor (this class has only one constructor)  
      //------------------------------------------------------------
@@ -112,7 +111,7 @@ public abstract class Animal
                System.out.printf("\n%s has died, action can't be done",name);
           }   
      }//end of doAction.
-     
+    
      //-------------------------------------------------------------------------------------
      //toString() - return a string with character basic info
      // *note: I'm not sure if you guys override this in WaterFowls so I leave it not final.  
