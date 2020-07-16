@@ -13,21 +13,6 @@ public class AngryDuck extends WaterFowl implements Teleport
           
      }//end of constructor.
      
-     public boolean fly_state()
-     {
-          return super.fly_state();  
-     } 
-     
-     public void attack(Animal name1) 
-     {
-          super.attack(name1); 
-     } 
-     
-     public int getKillCount()
-     {
-          return super.getKillCount();
-     }
-     
      //-------------------------------------------------------------------------
      //method getPosition() - get character and return its position as a String
      //-------------------------------------------------------------------------
