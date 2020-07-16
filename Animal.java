@@ -3,7 +3,7 @@
 //Contributors: Akash, Zein, Kelsee, James 
 //-----------------------------------------
 
-public abstract class Animal2
+public abstract class Animal
 {
      protected static int count = 0;            //count is static varible. 
      protected String color = "";               //color of character. 
@@ -13,7 +13,7 @@ public abstract class Animal2
      //------------------------------------------------------------
      // Animal's constructor (this class has only one constructor)  
      //------------------------------------------------------------
-     public Animal2(String color, String name)
+     public Animal(String color, String name)
      { 
           this.color = color; //set color for animal. 
           this.name = name;   //set name for animal. 
