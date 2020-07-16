@@ -9,6 +9,7 @@ public abstract class Animal
      protected String color = "";               //color of character. 
      protected int health = 3;                  //health of character. (deafault is 3/3 when created)  
      protected String name = "";                //name of character.
+     protected Point location = new Point(0,0);
 
      //------------------------------------------------------------
      // Animal's constructor (this class has only one constructor)  
