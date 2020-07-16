@@ -3,7 +3,7 @@ import java.awt.Point;
 public class AngryDuck extends WaterFowl implements Teleport
 { 
      //Declare varibles.
-     location = new Point (0,0); //default is (0,0) when created.
+     Point location = new Point (0,0); //default is (0,0) when created.
      //-----------------------------------------
      // AngryDuck's only constructor
      //-----------------------------------------
