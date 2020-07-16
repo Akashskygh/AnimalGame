@@ -50,7 +50,7 @@ public class CuriousBunny extends Animal implements Teleport
 
      public void teleport(double x, double y)
      {
-          if (x > 500 && x < 1000 && y > 0 && y < 1000)
+          if (x >= 500 && x <= 1000 && y >= 0 && y <= 1000)
             location.setLocation(x, y);
           else
             System.out.println("Cannot teleport, area is out of bounds!");         
