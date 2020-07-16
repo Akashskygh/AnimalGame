@@ -2,15 +2,14 @@
 //Animal is abstract class.
 //Contributors: Akash, Zein, Kelsee, James 
 //-----------------------------------------
-import java.awt.Point;
-public abstract class Animal implements Teleport 
+
+public abstract class Animal
 {
      protected static int count = 0;            //count is static varible. 
      protected String color = "";               //color of character. 
      protected int health = 3;                  //health of character. (deafault is 3/3 when created)  
      protected String name = "";                //name of character.
-     protected String teleporter ="null";       // only bunny & duck can teleport. 
-     protected Point location = new Point(0,0); //storage location of character
+
      //------------------------------------------------------------
      // Animal's constructor (this class has only one constructor)  
      //------------------------------------------------------------
@@ -75,7 +74,7 @@ public abstract class Animal implements Teleport
      //----------------------------------------
      //hit() - hits the character 
      //----------------------------------------
-     final public String hit(int times )
+     final public String hit(int times)
      { 
           
           { 
@@ -125,23 +124,5 @@ public abstract class Animal implements Teleport
           String result = "This animal is a " + this.getClass().getSimpleName()  + " of color " + color + ", it is called " + name + " and health is at " + health + ".";   
           return result;    
      } 
-     //-------------------------------------------------------------------------
-     //method getPosition() - get character and return its position as a String
-     //-------------------------------------------------------------------------
-     public String getPosition()
-     {
-          return "("+location.getX() + ", "+location.getY() + ")";
-     }//end of getPostion(). 
-     
-     //------------------------------------------------------------------------------------
-     //method teleport() - get position from user and teleport character to given position
-     //**Kelsee help me with this part please. Thank u so muchhh!!!    
-     //** note: I added a varible teleporter to Bunny & Duck class's constructors to mark they 
-     //can teleport. Remember to use this to teleport them since they each of them only can 
-     //teleport to one half of the map. 
-     //------------------------------------------------------------------------------------
-     public void teleport(double x, double y)
-     { 
-     }//end of teleport(). 
      
 }//end of abstract class Animal. 
