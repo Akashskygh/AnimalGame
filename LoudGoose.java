@@ -1,41 +1,11 @@
 import java.util.*; 
 
-public class LoudGoose extends WaterFowl
+public class LoudGoose2 extends WaterFowl2
 {
-  public LoudGoose(String color, String name)
+  public LoudGoose2(String color, String name)
   { 
     super(color, name); 
-  } 
-  
-  public void setName(String name1)
-  {
-    name = name1; 
   }
-  
-  public String getName()
-  { 
-    return name; 
-  } 
-  
-  public String getColor()
-  { 
-    return super.getColor(); 
-  } 
-  
-  public void setColor(String color1)
-  { 
-    color = color1; 
-  }
-  
-  public int getHealth()
-  {
-    return health; 
-  } 
-  
-  public String hit(int times)
-  { 
-    return super.hit(times); 
-  } 
   
   public String fly()
   { 
@@ -65,12 +35,6 @@ public class LoudGoose extends WaterFowl
   public int getKillCount()
   {
     return super.getKillCount();
-  }
-    
-     
-  public String toString() 
-  { 
-    return super.toString();   
   }
  
 }
