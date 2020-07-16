@@ -9,7 +9,6 @@ public class AngryDuck extends WaterFowl implements Teleport
      public AngryDuck(String color, String name)
      { 
           super(color, name);
-          location = new Point (0,0); //AngryDuck can teleport. 
           
      }//end of constructor.
      
@@ -18,7 +17,7 @@ public class AngryDuck extends WaterFowl implements Teleport
      //-------------------------------------------------------------------------
      public String getPosition()
      {
-          return "("+ location.getX() + ", "+ location.getY() + ")";
+          return super.name + " is at ("+ location.getX() + ", "+ location.getY() + ")";
           
      }//end of getPostion(). 
      //-----------------------------------------------
@@ -26,7 +25,7 @@ public class AngryDuck extends WaterFowl implements Teleport
      //-----------------------------------------------
      public double getX()
      {
-          return location.getY()
+          return location.getY();
      }//end of getX()
      //-----------------------------------------------
      //method getY() - get Y coordinate of character
@@ -35,18 +34,15 @@ public class AngryDuck extends WaterFowl implements Teleport
      {
           return location.getX();
      }//end of getY()
-     //---------------------------------------------
-     // checkCoord() - check validity of location
-     //---------------------------------------------
-     public void checkCoord()
-     {
-          //Kelsee please help me with this. 
-     }//end of checkCoord().
+     
      //------------------------------------------------------------------------------------
      //method teleport() - get position from user and teleport character to given position
      //------------------------------------------------------------------------------------
      public void teleport(double x, double y)
      { 
-       //to be completed - Kels
+       if (x >= 0 && x <= 500 && y >= 0 && y <= 1000)
+            location.setLocation(x, y);
+          else
+            System.out.print("Cannot teleport, area is out of bounds!");
      }//end of teleport(). 
 }//end of AngryDuck class. 
