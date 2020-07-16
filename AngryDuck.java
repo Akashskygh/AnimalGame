@@ -2,13 +2,15 @@ import java.awt.Point;
 
 public class AngryDuck extends WaterFowl implements Teleport
 { 
+     //Declare varibles.
+     location = new Point (0,0); //default is (0,0) when created.
      //-----------------------------------------
      // AngryDuck's only constructor
      //-----------------------------------------
      public AngryDuck(String color, String name)
      { 
           super(color, name);
-          location = new Point (0,0); //default is (0,0) when created.
+          location = new Point (0,0); //AngryDuck can teleport. 
           
      }//end of constructor.
      
@@ -30,7 +32,7 @@ public class AngryDuck extends WaterFowl implements Teleport
      //-------------------------------------------------------------------------
      //method getPosition() - get character and return its position as a String
      //-------------------------------------------------------------------------
-     public String getPosition(Animal name1)
+     public String getPosition()
      {
           return "("+ location.getX() + ", "+ location.getY() + ")";
           
@@ -38,15 +40,11 @@ public class AngryDuck extends WaterFowl implements Teleport
 
      //------------------------------------------------------------------------------------
      //method teleport() - get position from user and teleport character to given position
-     //**Kelsee help me with this part please. Thank u so muchhh!!!    
-     //** note: I added a varible teleporter to Bunny & Duck class's constructors to mark they 
-     //can teleport. Remember to use this to teleport them since they each of them only can 
-     //teleport to one half of the map. 
      //------------------------------------------------------------------------------------
-     public void teleport(int x, int y)
+     public void teleport(double x, double y)
      { 
        //to be completed - Kels
      }//end of teleport(). 
 
        
-}
+}//end of AngryDuck class. 
