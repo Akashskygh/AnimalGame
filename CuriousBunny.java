@@ -1,5 +1,6 @@
 import java.awt.Point;  
-public class CuriousBunny extends Animal 
+
+public class CuriousBunny extends Animal implements Teleport
 {
      //---------------------------------------------------------
      //CuriousBunny's constructor.(this is the only constructor)  
@@ -7,8 +8,8 @@ public class CuriousBunny extends Animal
      public CuriousBunny(String color, String name)
      { 
           super(color, name);
-          teleporter = "Bunny";      //this is Bunny. 
-          location = new Point(0,0); //default location is (0,0) when character is created
+          String teleporter = "Bunny";      //this is Bunny. 
+          Point location = new Point(0,0); //default location is (0,0) when character is created
      }//end of CuriousBunny
      
      //-------------------------------
@@ -18,4 +19,15 @@ public class CuriousBunny extends Animal
      {
           doAction("is hopping");
      }//end of hop(). 
+     
+     public String getPosition(Animal name1)
+     {
+       return "("+ location.getX() + ", "+ location.getY() + ")";
+     }
+     
+     public void teleport(int x, int y)
+     {
+       //To be completed - Kels
+     }
+     
 }//end of CuriousBunny class.
