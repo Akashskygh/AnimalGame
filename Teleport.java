@@ -19,11 +19,7 @@ public interface Teleport
      //-----------------------------------------------
      public double getY();
      //----------------------------------------------
-     //checkCoord() - check validity of coordinate
+     //teleport() - teleport character to new position
      //----------------------------------------------
-     public void checkCoord();
-     //------------------------------------------------------------------------------------
-     //method teleport() - get position from user and teleport character to given position
-     //------------------------------------------------------------------------------------
      public void teleport(double x, double y);
 }//end of Teleport. 
