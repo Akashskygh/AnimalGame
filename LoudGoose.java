@@ -1,8 +1,8 @@
 import java.util.*; 
 
-public class LoudGoose2 extends WaterFowl2
+public class LoudGoose extends WaterFowl
 {
-  public LoudGoose2(String color, String name)
+  public LoudGoose(String color, String name)
   { 
     super(color, name); 
   }
