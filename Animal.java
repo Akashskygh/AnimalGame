@@ -1,7 +1,7 @@
-//-----------------------------------------
-//Animal is abstract class.
-//Contributors: Akash, Zein, Kelsee, James 
-//-----------------------------------------
+//*******************************************************************************
+//   Animal is Abstract class.
+//   Contributors: Akash, Zein, Kelsee, James 
+//*******************************************************************************
 
 public abstract class Animal
 {
@@ -29,7 +29,7 @@ public abstract class Animal
      }//end of getColor()
      
      //--------------------------------------------------
-     //setColor() set color of character.
+     //setColor() - set color of character.
      //--------------------------------------------------
      final public void setColor(String color)
      { 
@@ -59,6 +59,7 @@ public abstract class Animal
      { 
           return health; 
      }//end of getHealth()
+     
      //-------------------------------------------------
      //setHealth() - set new health value for character.
      //-------------------------------------------------
@@ -71,12 +72,12 @@ public abstract class Animal
           }
           health = newHealth; //set new health. 
      }//end of setHealth
+     
      //----------------------------------------
      //hit() - hits the character 
      //----------------------------------------
      final public String hit(int times)
-     { 
-          
+     {   
           { 
                if (health == 0)
                { 
@@ -98,31 +99,27 @@ public abstract class Animal
                }
                
                return "Make sure to not abuse animals again!";
-          }
-          
+          }      
      } 
      //-------------------------------------------------------------------------------------
      //doAction() - to check if animal alive or not then print action/warning
      //-------------------------------------------------------------------------------------
      public void doAction(String action)
      {
-          if (health>0)
-          {
+          if (health>0){
                System.out.printf("\n%s is %s",name, action); //display action. 
           } else {
                System.out.printf("\n%s has died, action can't be done",name);
-          }
-          
+          }   
      }//end of doAction.
+     
      //-------------------------------------------------------------------------------------
      //toString() - return a string with character basic info
      // *note: I'm not sure if you guys override this in WaterFowls so I leave it not final.  
      //--------------------------------------------------------------------------------------
      public String toString() 
      { 
-
           String result = "This animal is a " + this.getClass().getSimpleName()  + " of color " + color + ", it is called " + name + " and health is at " + health + ".";   
           return result;    
-     } 
-     
+     } //end of toString()
 }//end of abstract class Animal. 
