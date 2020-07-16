@@ -45,7 +45,7 @@ public class AngryDuck extends WaterFowl implements Teleport
      //------------------------------------------------------------------------------------
      public void teleport(double x, double y)
      { 
-       if (x > 0 && x < 500 && y > 0 && y < 1000)
+       if (x >= 0 && x <= 500 && y >= 0 && y <= 1000)
             location.setLocation(x, y);
           else
             System.out.print("Cannot teleport, area is out of bounds!");
