@@ -114,6 +114,40 @@ public abstract class Animal
           }   
      }//end of doAction.
      
+     public String getPosition()
+     {
+          return "("+ location.getX() + ", "+ location.getY() + ")";
+          
+     }//end of getPostion(). 
+     //-----------------------------------------------
+     //method getX() - get X coordinate of character
+     //-----------------------------------------------
+     public double getX()
+     {
+          return location.getY()
+     }//end of getX()
+     //-----------------------------------------------
+     //method getY() - get Y coordinate of character
+     //-----------------------------------------------
+     public double getY()
+     {
+          return location.getX();
+     }//end of getY()
+     //---------------------------------------------
+     // checkCoord() - check validity of location
+     //---------------------------------------------
+     public void checkCoord()
+     {
+          //Kelsee please help me with this. 
+     }//end of checkCoord().
+     //------------------------------------------------------------------------------------
+     //method teleport() - get position from user and teleport character to given position
+     //------------------------------------------------------------------------------------
+     public void teleport(double x, double y)
+     { 
+       //to be completed - Kels
+     }//end of teleport(). 
+     
      //-------------------------------------------------------------------------------------
      //toString() - return a string with character basic info
      // *note: I'm not sure if you guys override this in WaterFowls so I leave it not final.  
