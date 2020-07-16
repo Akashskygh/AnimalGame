@@ -3,16 +3,15 @@
 // Auhthors: James Nguyen & Kelsee Carmichael. 
 // Last updated by: null. 
 //----------------------------------------------------------------
-import java.util.*; //import java ultility package. 
-
+import java.awt.Point; 
 public interface Teleport
-{
+{    
      //-------------------------------------------------------------------------
      //method getPosition() - get character and return its position as a String
      //-------------------------------------------------------------------------
-     public String getPosition(Animal name1); 
+     public String getPosition(); 
      //------------------------------------------------------------------------------------
      //method teleport() - get position from user and teleport character to given position
      //------------------------------------------------------------------------------------
-     public void teleport(int x, int y);
+     public void teleport(double x, double y);
 }//end of Teleport. 

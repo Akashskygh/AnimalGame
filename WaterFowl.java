@@ -1,6 +1,6 @@
 import java.util.*; 
 
-public class WaterFowl extends Animal implements Attackers
+public abstract class WaterFowl extends Animal implements Attackers
 { 
   protected boolean fly_state = false; 
   protected int kills = 0; 
@@ -27,7 +27,7 @@ public class WaterFowl extends Animal implements Attackers
 
      else  
      {  
-       return dead_mess; 
+       return "No such action is possible, your animal is dead. You shouldn't have abused it."; 
      }
   }
   
@@ -49,7 +49,7 @@ public class WaterFowl extends Animal implements Attackers
    
      else 
      { 
-       return dead_mess; 
+       return "No such action is possible, your animal is dead. You shouldn't have abused it." ; 
      }
   }
   
@@ -62,7 +62,7 @@ public class WaterFowl extends Animal implements Attackers
    
      else 
      { 
-       return dead_mess; 
+       return "No such action is possible, your animal is dead. You shouldn't have abused it."; 
      }
     
   }
