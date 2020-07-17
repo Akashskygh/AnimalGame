@@ -41,7 +41,7 @@ public class AngryDuck extends WaterFowl implements Teleport
      //------------------------------------------------------------------------------------
      //method teleport() - get position from user and teleport character to given position
      //------------------------------------------------------------------------------------
-     public void teleport(double x, double y)
+     public void teleport(int x, int y)
      { 
        if (x >= 0 && x <= 500 && y >= 0 && y <= 1000)
             location.setLocation(x, y);

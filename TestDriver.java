@@ -57,7 +57,7 @@ public class TestDriver
           System.out.print("\n"+duck.getPosition()+"\n");
           
           //using teleport()
-          bunny.teleport(100,12.5);
+          bunny.teleport(100,125);
           bunny.teleport(600,500);
           duck.teleport(-1,2); 
           
