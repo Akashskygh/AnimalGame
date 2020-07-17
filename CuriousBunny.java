@@ -19,7 +19,7 @@ public class CuriousBunny extends Animal implements Teleport
      //-------------------------------
      public void hop()
      {
-          doAction("is hopping..");
+          doAction("is hopping!");
      }//end of hop(). 
 
      //-------------------------------------------------------------
