@@ -43,6 +43,7 @@ public class TestDriver
           
           System.out.println ("\n\nFourth Animal->" + goose.toString());
           goose.fly();
+          goose.land();
           goose.swim();
           System.out.printf("\nflying state is %b.", goose.fly_state());
           System.out.println();
@@ -53,25 +54,22 @@ public class TestDriver
           //----------------------------------------------------------------
           //display default positions.  
           System.out.print("\n\n"+bunny.getPosition());
-          System.out.print("\n"+duck.getPosition());
+          System.out.print("\n"+duck.getPosition()+"\n");
           
-          //using teleport(). 
-          bunny.teleport(100,12.5); 
+          //using teleport()
+          bunny.teleport(100,12.5);
+          bunny.teleport(600,500);
           duck.teleport(-1,2); 
           
           //display new positions. 
           System.out.print( "\n"+bunny.getPosition() );
-          System.out.print( "\n"+duck.getPosition() +"\n");
+          System.out.print( "\n"+duck.getPosition() +"\n\n");
+          
           //--------------------------------------------------------------
           //Testing Attackers. (Only AngryDuck && LoudGoose are attackers)
           //--------------------------------------------------------------
           
-          //testing attack.
-          duck.attack(bunny);  
-          duck.attack(goose);
-          goose.attack(goose); //attack its own type (should display an error message)  
-          goose.attack(duck);
-          goose.attack(bunny);
+
       
      }// end of main()
 }// end of class.
