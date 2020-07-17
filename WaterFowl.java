@@ -20,32 +20,27 @@ public abstract class WaterFowl extends Animal implements Attackers
      //----------------------------------------
      // fly() - do action flying
      //----------------------------------------
-     final public String fly()
+     final public void fly()
      {
-          if (health > 0)
-          {
-               System.out.printf ("\n%s is flying!", getSimpleName());
+          if (!fly_state){
+               doAction("is flying..");
+               fly_state = true;
+          }else {
+               doAction("is already flying. Action can't be done");
           }
-          else
-          {
-               System.out.printf ("\n%s cannot fly as it is dead!", getSimpleName());
-          }
+               
      }//end of fly(). 
      
      //------------------------------------
      // land() - do action landing
      //------------------------------------
-     final public String land()
+     final public void land()
      {  
-          if ( health > 0 ) { 
-               if (fly_state == false) { 
-                    return "Duck isn't flying."; 
-               } else {
-                    fly_state = false; 
-                    return name + " is landing.";
-               }
+          if (fly_state) { 
+               doAction(" is landing..");
+               fly_state = false; 
           } else { 
-               return "No such action is possible, your animal is dead. You shouldn't have abused it." ; 
+               doAction(" is already landing. Action can't be done!");  
           }
      }//end of land(). 
      
@@ -55,6 +50,7 @@ public abstract class WaterFowl extends Animal implements Attackers
      final public void swim()
      { 
           doAction(" is swimming.");
+          fly_state = false;         //if character is swiming, it should be landing. 
      }//end of swim().
      
      //---------------------------------------
