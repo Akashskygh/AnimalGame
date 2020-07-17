@@ -7,7 +7,7 @@ public interface Attackers
   //---------------------------------------
   //attack() - to attack others characters
   //---------------------------------------
-  public void attack(Animal name); 
+  public void attack(Animal name1); 
   //-------------------------------------------------
   //getKillCount() - to count kill the character got
   //-------------------------------------------------
