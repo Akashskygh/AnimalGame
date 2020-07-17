@@ -45,7 +45,7 @@ public class CuriousBunny extends Animal implements Teleport
      //-----------------------------------------------
      //method getY() - get Y coordinate of character
      //-----------------------------------------------
-     public double getY()
+     public int getY()
      {
           return (int) location.getY();
      }//end of getY()
