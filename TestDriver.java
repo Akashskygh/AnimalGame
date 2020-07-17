@@ -69,7 +69,20 @@ public class TestDriver
           //Testing Attackers. (Only AngryDuck && LoudGoose are attackers)
           //--------------------------------------------------------------
           
-
+          System.out.printf ("Bugs has %d health point.\n", bunny.getHealth());
+          duck.attack(bunny);  
+          System.out.printf ("Bugs has %d health point.\n", bunny.getHealth());
+          duck.attack(goose);
+          goose.attack(goose); //attack its own type (should display an error message)  
+          goose.attack(duck);
+          goose.attack(bunny);
+          goose.attack(bunny);
+          System.out.printf ("Bugs has %d health point.\n", bunny.getHealth());
+          goose.attack(duck);
+          goose.attack(duck);
+          duck.attack(goose);
+          System.out.println("Daisy has a kill count of "+goose.getKillCount());
+          System.out.println("Donald Trump has a kill count of "+duck.getKillCount());
       
      }// end of main()
 }// end of class.
