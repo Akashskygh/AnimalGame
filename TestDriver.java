@@ -30,18 +30,22 @@ public class TestDriver
           
           System.out.println ("\n\nSecond Animal->" + pig.toString());
           pig.sleep();
-          pig.hit(2);
           pig.roll();
-          pig.hit(1);
+          pig.hit(3);
           pig.sleep();
-         
-          System.out.printf("\nflying state of %s: %b", duck.getName(),duck.fly_state() ); //WaterFowl when dead the state should be landing (false). 
+          
+          System.out.println ("\n\nThird Animal-> " + duck.toString());
+          duck.setName("Donald Trump");
+          System.out.printf ("\n%s.", duck.getName());
+          duck.swim();
+          duck.fly();
+          System.out.printf("\nflying state is %b.", duck.fly_state());  
           
           //----------------------------------------------------------------
           //Testing Teleport. (Only CuriousBunny && AngryDuck can teleport)
           //----------------------------------------------------------------
           //display default positions.  
-          System.out.print("\n"+bunny.getPosition());
+          System.out.print("\n\n"+bunny.getPosition());
           System.out.print("\n"+duck.getPosition());
           
           //using teleport(). 
