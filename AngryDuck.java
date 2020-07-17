@@ -1,3 +1,7 @@
+//*******************************************
+// AngryDuck.java 
+// Contributors: Zein, Kelsee, Akash, James
+//*******************************************
 import java.awt.Point; //import Point 2D
 public class AngryDuck extends WaterFowl implements Teleport
 { 
@@ -9,7 +13,6 @@ public class AngryDuck extends WaterFowl implements Teleport
      public AngryDuck(String color, String name)
      { 
           super(color, name);
-          
      }//end of constructor.
      
      //-------------------------------------------------------------------------
@@ -23,16 +26,16 @@ public class AngryDuck extends WaterFowl implements Teleport
      //-----------------------------------------------
      //method getX() - get X coordinate of character
      //-----------------------------------------------
-     public double getX()
+     public int getX()
      {
-          return location.getY();
+          return (int) location.getY();
      }//end of getX()
      //-----------------------------------------------
      //method getY() - get Y coordinate of character
      //-----------------------------------------------
-     public double getY()
+     public int getY()
      {
-          return location.getX();
+          return (int) location.getX();
      }//end of getY()
      
      //------------------------------------------------------------------------------------
