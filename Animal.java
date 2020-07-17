@@ -83,7 +83,7 @@ public abstract class Animal
                {
                     health = 0;    //health set back 0.
                     count--;       //count-1. 
-                    System.out.print("\nThis animal is dead now. No extra actions allowed.");
+                    System.out.print("\nThis animal is dead now.");
                } else {            //if you hit less than health character has, it won't die.
                     health = health - times; //set new health. 
                }
