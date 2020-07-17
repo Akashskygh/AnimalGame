@@ -26,6 +26,9 @@ public class TestDriver
           bunny.hit(1);
           System.out.printf ("\nBugs has %d health point.", bunny.getHealth());
           bunny.hop();
+          System.out.println ("\nMake animal's health 3 again!");
+          bunny.setHealth(3);
+          System.out.printf ("Bugs has %d health points.", bunny.getHealth());
           
           //Testing senario when some of animals are dead
           duck.hit(3); //kill the (WaterFowl) duck.
