@@ -13,14 +13,19 @@ public class TestDriver
           HappyPig pig = new HappyPig ("Pink", "Peppa");
           AngryDuck duck = new AngryDuck ("Black", "Donald");
           LoudGoose goose = new LoudGoose ("Yellow", "Daisy");
-          
-          //-----------------------------------------
-          //Testing Actions (Not Teleport && Attack).
-          //-----------------------------------------
+
+          Animal.displayCount();
+          System.out.println ("\nFirst Animal-> " + bunny.toString());
+          System.out.printf ("Bugs has %d health points.", bunny.getHealth());
           bunny.hop();
-          pig.sleep();
-          duck.fly();  //default state is landing - this should change duck state to flying. 
-          goose.land();//default state is landing - this should display and ERROR message.
+          bunny.hit(1);
+          bunny.hit(1);
+          System.out.print("\nMake Bugs red!");
+          bunny.setColor("Red");
+          System.out.printf ("\n%s", bunny.getColor());
+          bunny.hit(1);
+          System.out.printf ("\nBugs has %d health point.", bunny.getHealth());
+          bunny.hop();
           
           //Testing senario when some of animals are dead
           duck.hit(3); //kill the (WaterFowl) duck.
