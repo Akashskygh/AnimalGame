@@ -95,6 +95,13 @@ public abstract class Animal
           }     
      }//end of hit(). 
      
+     // display number of animals
+     public static void displayCount()
+     {
+          System.out.printf ("There are now %d animals.", count);
+     
+     }// end of displayCount()
+    
      //-------------------------------------------------------------------------------------
      //doAction() - to check if animal alive or not then print action/warning
      //-------------------------------------------------------------------------------------
