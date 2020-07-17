@@ -22,15 +22,13 @@ public abstract class WaterFowl extends Animal implements Attackers
      //----------------------------------------
      final public String fly()
      {
-          if ( health > 0 ) { 
-               if ( fly_state == true) {  
-                    return "Duck is still flying and had not yet landed.";
-               } else { 
-                    fly_state = true; 
-                    return name + " is flying!";
-               }
-          } else  {  
-               return "No such action is possible, your animal is dead. You shouldn't have abused it."; 
+          if (health > 0)
+          {
+               System.out.printf ("\n%s is flying!", getSimpleName());
+          }
+          else
+          {
+               System.out.printf ("\n%s cannot fly as it is dead!", getSimpleName());
           }
      }//end of fly(). 
      
