@@ -103,7 +103,7 @@ public abstract class Animal
           if (health>0){
                System.out.printf("\n%s %s",name, action); //display action. 
           } else {
-               System.out.printf("\n%s has died, action can't be done",name);
+               System.out.printf("\n%s has died, action can't be done.",name);
           }   
      }//end of doAction.
      
