@@ -1,5 +1,5 @@
 //*******************************************************************************
-//   Animal is Abstract class.
+//   Animal.java - This is Abstract class.
 //   Contributors: Akash, Zein, Kelsee, James 
 //*******************************************************************************
 
@@ -77,29 +77,24 @@ public abstract class Animal
      //----------------------------------------
      final public String hit(int times)
      {   
-          { 
-               if (health == 0)
-               { 
-                    return "STOP! Stop hitting a dead bunny-ERROR";  
-               } 
-               
-               for (int hits=0; hits < times; hits++)
+          if (health>0) {
+               while(times > 0) 
                {
-                    if ( health > 0 )
-                    { 
+                    if(health==0) 
+                    {
+                         count--;
+                         System.out.print("\nThis animal is dead now. No extra actions allowed");
+                         break; //break the loops when health is 0. 
+                    } else { 
                          health--; 
+                         times--;
                     }
-                    
-                    else 
-                    { 
-                         count--; 
-                         return "No such action is possible, the animal is dead. You shouldn't have abused it.";
-                    }
-               }
-               
-               return "Make sure to not abuse animals again!";
-          }      
-     } 
+               } 
+          } else {
+               System.out.print("\nNo such action is possible, the animal is already dead. You shouldn't have abused it.");
+          }     
+     }//end of hit(). 
+     
      //-------------------------------------------------------------------------------------
      //doAction() - to check if animal alive or not then print action/warning
      //-------------------------------------------------------------------------------------
@@ -111,7 +106,7 @@ public abstract class Animal
                System.out.printf("\n%s has died, action can't be done",name);
           }   
      }//end of doAction.
-    
+     
      //-------------------------------------------------------------------------------------
      //toString() - return a string with character basic info
      // *note: I'm not sure if you guys override this in WaterFowls so I leave it not final.  
