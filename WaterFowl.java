@@ -76,7 +76,7 @@ public abstract class WaterFowl extends Animal implements Attackers
           } else if (name1.health == 1) { 
                kills++; 
                name1.hit(1); 
-               System.out.println("Succesful strike, the animal is now Dead"); 
+               System.out.println("Animal cannot be attacked anymore as it is dead."); 
           } else { 
                System.out.println("Succesful strike, the animal is now Hit"); 
                name1.hit(1); 
