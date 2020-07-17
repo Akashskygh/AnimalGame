@@ -77,20 +77,18 @@ public abstract class Animal
      //----------------------------------------
      final public void hit(int times)
      {   
-          if (health>0) {
-               while(times > 0) 
+          if (health>0) // if this character still alive. 
+          {
+               if (times >= health) //if you hit animal greater/equal the health available then it dies. 
                {
-                    if(health==0) 
-                    {
-                         count--;
-                         System.out.print("\nThis animal is dead now. No extra actions allowed");
-                         break; //break the loops when health is 0. 
-                    } else { 
-                         health--; 
-                         times--;
-                    }
-               } 
-          } else {
+                    health = 0;    //health set back 0.
+                    count--;       //count-1. 
+                    System.out.print("\nThis animal is dead now. No extra actions allowed");
+               } else {            //if you hit less than health character has, it won't die.
+                    health = health - times; //set new health. 
+               }
+          } 
+          else {                   // if this character already dead. 
                System.out.print("\nNo such action is possible, the animal is already dead. You shouldn't have abused it.");
           }     
      }//end of hit(). 
@@ -99,9 +97,9 @@ public abstract class Animal
      public static void displayCount()
      {
           System.out.printf ("There are now %d animals.", count);
-     
+          
      }// end of displayCount()
-    
+     
      //-------------------------------------------------------------------------------------
      //doAction() - to check if animal alive or not then print action/warning
      //-------------------------------------------------------------------------------------
