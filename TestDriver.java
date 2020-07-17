@@ -36,11 +36,18 @@ public class TestDriver
           
           System.out.println ("\n\nThird Animal-> " + duck.toString());
           duck.setName("Donald Trump");
-          System.out.printf ("\n%s.", duck.getName());
+          System.out.printf ("\n%s", duck.getName());
           duck.swim();
           duck.fly();
           System.out.printf("\nflying state is %b.", duck.fly_state());  
           
+          System.out.println ("\n\nFourth Animal->" + goose.toString());
+          goose.fly();
+          goose.swim();
+          System.out.printf("\nflying state is %b.", goose.fly_state());
+          System.out.println();
+          Animal.displayCount();
+         
           //----------------------------------------------------------------
           //Testing Teleport. (Only CuriousBunny && AngryDuck can teleport)
           //----------------------------------------------------------------
