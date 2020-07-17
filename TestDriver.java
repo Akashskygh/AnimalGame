@@ -17,8 +17,7 @@ public class TestDriver
           Animal.displayCount();
           System.out.println ("\nFirst Animal-> " + bunny.toString());
           bunny.hop();
-          bunny.hit(1);
-          bunny.hit(1);
+          bunny.hit(2);
           System.out.print("\nMake Bugs red!");
           bunny.setColor("Red");
           System.out.printf ("\n%s", bunny.getColor());
@@ -27,19 +26,15 @@ public class TestDriver
           bunny.hop();
           System.out.println ("\nMake animal's health 3 again!");
           bunny.setHealth(3);
-          System.out.printf ("Bugs has %d health points.", bunny.getHealth());
+          System.out.printf ("Bugs has %d health points again!", bunny.getHealth());
           
-          //Testing senario when some of animals are dead
-          duck.hit(3); //kill the (WaterFowl) duck.
-          pig.hit(3);  //kill the pig. 
-          
-          pig.roll(); //this animal is dead now && should display an error message
-          pig.sleep();//                      (same)
-          duck.fly(); //                      (same)    
-          
-          //display info of character. 
-          System.out.print("\n"+duck.toString());
-          System.out.print("\n"+pig.toString());
+          System.out.println ("\n\nSecond Animal->" + pig.toString());
+          pig.sleep();
+          pig.hit(2);
+          pig.roll();
+          pig.hit(1);
+          pig.sleep();
+         
           System.out.printf("\nflying state of %s: %b", duck.getName(),duck.fly_state() ); //WaterFowl when dead the state should be landing (false). 
           
           //----------------------------------------------------------------
