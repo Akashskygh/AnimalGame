@@ -13,13 +13,13 @@ public interface Teleport
      //-----------------------------------------------
      //method getX() - get X coordinate of character
      //-----------------------------------------------
-     public double getX();
+     public int getX();
      //-----------------------------------------------
      //method getY() - get Y coordinate of character
      //-----------------------------------------------
-     public double getY();
+     public int getY();
      //----------------------------------------------
      //teleport() - teleport character to new position
      //----------------------------------------------
-     public void teleport(double x, double y);
+     public void teleport(int x, int y);
 }//end of Teleport. 
