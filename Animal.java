@@ -75,7 +75,7 @@ public abstract class Animal
      //----------------------------------------
      //hit() - hits the character 
      //----------------------------------------
-     final public String hit(int times)
+     final public void hit(int times)
      {   
           if (health>0) {
                while(times > 0) 
@@ -101,7 +101,7 @@ public abstract class Animal
      public void doAction(String action)
      {
           if (health>0){
-               System.out.printf("\n%s is %s",name, action); //display action. 
+               System.out.printf("\n%s %s",name, action); //display action. 
           } else {
                System.out.printf("\n%s has died, action can't be done",name);
           }   

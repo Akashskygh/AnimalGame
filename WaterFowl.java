@@ -12,7 +12,7 @@ public abstract class WaterFowl extends Animal implements Attackers
      //-----------------------------------------
      // WaterFowl's only construct
      //-----------------------------------------
-     final public WaterFowl(String color, String name) 
+     public WaterFowl(String color, String name) 
      { 
           super(color,name); 
      } //end of constructor. 
@@ -54,7 +54,7 @@ public abstract class WaterFowl extends Animal implements Attackers
      //--------------------------------------
      // swim() - do action swimming
      //--------------------------------------
-     final public String swim()
+     final public void swim()
      { 
           doAction(" is swimming...");
      }//end of swim().

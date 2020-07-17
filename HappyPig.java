@@ -15,14 +15,14 @@ public class HappyPig extends Animal
      //-------------------------------------
      // sleep() - return action sleeping.
      //-------------------------------------
-     final public String sleep() 
+     final public void sleep() 
      { 
           doAction("is sleeping..."); //only the happy pig can sleep. 
      }//end of sleep(). 
      //------------------------------------
      //roll() -return action rolling
      //------------------------------------
-     final public String roll() 
+     final public void roll() 
      { 
           doAction("is rolling...");
      }//end of roll(). 
