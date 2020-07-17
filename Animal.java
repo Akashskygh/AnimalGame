@@ -120,7 +120,7 @@ public abstract class Animal
      //--------------------------------------------------------------------------------------
      public String toString() 
      { 
-          String result = "This animal is a " + this.getClass().getSimpleName()  + " of color " + color + ", it is called " + name + " and health is at " + health + ".";   
+          String result = "This animal is a " + this.getClass().getSimpleName()  + " of color " + color + ". It is called " + name + " and health is at " + health + ".";   
           return result;    
      } //end of toString()
 }//end of abstract class Animal. 
