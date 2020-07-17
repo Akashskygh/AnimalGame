@@ -16,7 +16,6 @@ public class TestDriver
 
           Animal.displayCount();
           System.out.println ("\nFirst Animal-> " + bunny.toString());
-          System.out.printf ("Bugs has %d health points.", bunny.getHealth());
           bunny.hop();
           bunny.hit(1);
           bunny.hit(1);
