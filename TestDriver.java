@@ -72,12 +72,7 @@ public class TestDriver
           goose.attack(goose); //attack its own type (should display an error message)  
           goose.attack(duck);
           goose.attack(bunny);
-          //display health of character being attacked. 
-          System.out.print("\n"+bunny.toString());
-          System.out.print("\n"+goose.toString());
-          System.out.print("\n"+duck.toString());
-          System.out.print("\n"+duck.toString());
-         
+      
      }// end of main()
 }// end of class.
      
