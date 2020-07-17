@@ -27,7 +27,7 @@ public abstract class WaterFowl extends Animal implements Attackers
                     return "Duck is still flying and had not yet landed.";
                } else { 
                     fly_state = true; 
-                    return name + " is flying...";
+                    return name + " is flying!";
                }
           } else  {  
                return "No such action is possible, your animal is dead. You shouldn't have abused it."; 
@@ -41,10 +41,10 @@ public abstract class WaterFowl extends Animal implements Attackers
      {  
           if ( health > 0 ) { 
                if (fly_state == false) { 
-                    return "Duck isn't flying..."; 
+                    return "Duck isn't flying."; 
                } else {
                     fly_state = false; 
-                    return name + " is landing...";
+                    return name + " is landing.";
                }
           } else { 
                return "No such action is possible, your animal is dead. You shouldn't have abused it." ; 
@@ -56,7 +56,7 @@ public abstract class WaterFowl extends Animal implements Attackers
      //--------------------------------------
      final public void swim()
      { 
-          doAction(" is swimming...");
+          doAction(" is swimming.");
      }//end of swim().
      
      //---------------------------------------
