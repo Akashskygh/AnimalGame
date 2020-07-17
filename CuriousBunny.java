@@ -1,9 +1,11 @@
+//******************************************
+// CuriousBunny.java 
+// Contributors: Zein, Kelsee, Akash, James.
+//*******************************************
 import java.awt.Point;  //import Point 2D
-
 public class CuriousBunny extends Animal implements Teleport
 {
      // Declare varibles. 
-
      Point location = new Point(500,0); //default location is (500,0) when character is create
 
      //---------------------------------------------------------
@@ -35,9 +37,9 @@ public class CuriousBunny extends Animal implements Teleport
      //-----------------------------------------------
      //method getX() - get X coordinate of character
      //-----------------------------------------------
-     public double getX()
+     public int getX()
      {
-          return location.getX();
+          return (int) location.getX();
 
      }//end of getX()
      //-----------------------------------------------
@@ -45,16 +47,16 @@ public class CuriousBunny extends Animal implements Teleport
      //-----------------------------------------------
      public double getY()
      {
-          return location.getY();
+          return (int) location.getY();
      }//end of getY()
 
-     public void teleport(double x, double y)
+     public void teleport(int x, int y)
      {
           if (x >= 500 && x <= 1000 && y >= 0 && y <= 1000)
             location.setLocation(x, y);
           else
             System.out.println("Cannot teleport, area is out of bounds!");         
-     }
+     }//end of teleport(). 
 
      
 }//end of CuriousBunny class.
