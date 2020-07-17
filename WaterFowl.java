@@ -23,7 +23,7 @@ public abstract class WaterFowl extends Animal implements Attackers
      final public void fly()
      {
           if (!fly_state){
-               doAction("is flying..");
+               doAction("is flying!");
                fly_state = true;
           }else {
                doAction("is already flying. Action can't be done");
@@ -37,7 +37,7 @@ public abstract class WaterFowl extends Animal implements Attackers
      final public void land()
      {  
           if (fly_state) { 
-               doAction(" is landing..");
+               doAction(" is landing.");
                fly_state = false; 
           } else { 
                doAction(" is already landing. Action can't be done!");  
